@@ -13,7 +13,7 @@ This Matlab program will plot the spectrogram with reference lines of notes. It 
 ## Tips
 
 - Use “audioread” function to import the audio file. Use “x = x(1:10*Fs,1);” to cut out the first 10 seconds of the sound. If the sound is two channel, only one channel is needed. 
-- Use “highpass” “lowpass” “bandpass” function to pick up your interested frequencies and eliminate irrelevant ones, e.g. the drums. Use “sound(x,Fs)” to play the sound. 
+- Use “highpass” “lowpass” “bandpass” function to pick up your interested frequencies and eliminate irrelevant ones, e.g. the low-frequency drums. Use “sound(x,Fs)” to play the sound. 
 
 - Use “spectrogram” function to perform the short-time Fourier transform. Check the Matlab documentation for setting the parameters. 
 - Plot an initial spectrogram to find your interested frequency range, set “fmin” and “fmax” for the range of reference lines of notes.

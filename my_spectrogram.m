@@ -2,12 +2,14 @@
 clear
 [x,Fs] = audioread('winter.wav');
 x = x(:,1); % keep one channel only
+x = highpass(x,500,Fs);
+% sound(x,Fs)
 
 %%
-M = 1024;
-L = 255;
+M = 2048;
+L = 1024;
 g = hamming(M);
-Ndft = 4096;
+Ndft = 8192;
 
 [s,f,t] = spectrogram(x,g,L,Ndft,Fs);
 
