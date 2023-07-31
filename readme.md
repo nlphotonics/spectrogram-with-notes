@@ -17,3 +17,8 @@ This Matlab program will plot the spectrogram with reference lines of notes. It 
 3. Plot an initial spectrogram to find your interested frequency range, set “fmin” and “fmax”.
 4. Run the program again with appropriate parameters and get the result. 
 
+
+
+## Reference
+
+**Frequencies of musical notes.** Section “Table of note frequencies” in https://en.wikipedia.org/wiki/Scientific_pitch_notation 
